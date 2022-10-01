@@ -1,6 +1,8 @@
 # HACTOBERFEST_2022
 ![download](https://user-images.githubusercontent.com/85143283/193420606-e2a9509c-8225-4e6e-bd85-ffddd404be7b.jpeg)
-#How to fork and clone a repository
+
+
+# How to fork and clone a repository
 Next, you'll want to fork the repository. You won't be allowed to push changes directly to the repository, so instead you'll make a fork which is a copy of the project that's under your control.
 
 image-10
