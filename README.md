@@ -17,7 +17,7 @@ Steps to Contribute in repository :
 - Fork this repository using fork button on the right side top corner of the page.
 - Copy the HTTPS link of the repo by clicking on the code button 
 - Clone your fork in the system using : 
- git clone https://github.com/Hactoberfest_2022 (paste the link here instead of this link)
+ git clone https:https:https://github.com/ratnesh-maurya/HACTOBERFEST_2022
 - Open directory using :
   cd HACTOBERFEST_2022
 - Create a branch
