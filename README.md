@@ -33,6 +33,6 @@ Steps to Contribute in repository :
  
  - git commit -m "Message for commit"
  
-  -git push -u origin branch-name
+  - git push -u origin branch-name
   
--Create a pull request in the repo after this and wait for PR approval.
+- Create a pull request in the repo after this and wait for PR approval.
