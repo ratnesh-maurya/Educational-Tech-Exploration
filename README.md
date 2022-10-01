@@ -19,20 +19,20 @@ Steps to Contribute in repository :
 - Clone your fork in the system using : 
 - git clone https:https:https://github.com/ratnesh-maurya/HACTOBERFEST_2022
 - Open directory using :
-- 
+
   -cd HACTOBERFEST_2022
   
   
 - Create a branch
-- 
+
  - git checkout -b branch-name
- - 
+ 
 -Open the file in local device, make required changes and then commit using following steps
 
  - git add filename
- - 
+ 
  - git commit -m "Message for commit"
- - 
+ 
   -git push -u origin branch-name
   
 -Create a pull request in the repo after this and wait for PR approval.
