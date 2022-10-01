@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    transition: .5s;
+}
+
+ul li a img{
+    display: cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul li a span {
+    position: absolute;
+    transition: .5s;
+}
+
+ul li a span:nth-child(1),ul li a span:nth-child(3) {
+    width: 100%;
+    height: 2px;
+    background: #262626;
+}
+ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+ul li a span:nth-child(2),ul li a span:nth-child(4) {
+    width: 2px;
+    height: 100%;
+    background: #262626;
+}
+ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+ul li a:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
