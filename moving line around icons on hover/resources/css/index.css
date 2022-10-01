@@ -2,7 +2,10 @@
 body {
     margin: 0;
     padding: 0;
+
+    background-color: black;
 }
+
 
 ul {
     position: absolute;
@@ -12,11 +15,12 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
+
 }
 
 ul li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 11px;
 }
 
 ul li a {
@@ -25,21 +29,26 @@ ul li a {
     height: 50px;
     position: relative;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 53px;
     font-size: 20px;
     text-align: center;
     transition: .5s;
+
+    background-color: white;
 }
 
 ul li a img{
     display: cell;
     text-align: center;
     vertical-align: middle;
+    
 }
 
 ul li a span {
     position: absolute;
     transition: .5s;
+
+    
 }
 
 ul li a span:nth-child(1),ul li a span:nth-child(3) {
