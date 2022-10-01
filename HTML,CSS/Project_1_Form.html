@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body{
+            background-color: #e6b4dd;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is HTML form tutorial.</h1>
+    <label for="">First Name*:</label>
+    <input type="text" name="firstname" value="" placeholder="firstName" required>
+    <label for="">Mid Name:</label>
+    <input type="text" name="midname"  placeholder="midName" value="">
+    <label for="">Last Name:</label>
+    <input type="text" name="lastname" value="" placeholder="lastName"><br><br>
+    <div>
+        <label for="">Email*:</label>
+        <input type="email" name="email" value="" required><br><br>
+
+    </div>
+    <label for="">Contect Number:</label>
+    <input type="number" name="contectnumber"><br><br>
+    <label for="">Linkdln-url</label>
+    <input type="url" name="linkdln-url"><br><br>
+    <label for="">Gender:</label>
+    <input type="radio" name="gender" value="">
+    Male
+    <input type="radio" name="gender">
+    Female
+    <input type="radio" name="gender">
+    Other <br><br>
+    <label for="">Parmanant Address*:</label>
+    <input type="text" name="parmanentaddress" value="" required><br><br>
+    <label for="">Local Address:</label>
+    <input type="text" name="localaddress" ><br><br>
+    <label for="">District*:</label>
+    <input type="text" name="district" required>
+    <label for="">Zip*:</label>
+    <input type="number" name="zip" required>
+    <label for="">State:</label>
+   <select name="State" id="">
+       <option value="" >none..</option>
+       <option value="">Utter Pradesh</option>
+       <option value="">Bihar</option>
+       <option value="">Madhya Pradesh</option>
+       <option value="">other</option>
+   </select><br><br>
+   <label for="">Image:</label>
+   <input type="file"  name="image" ><br><br>
+   <label for="">Resume or CV:</label>
+   <input type="file" name="resume or cv"><br><br>
+   <label for="">Date:</label>
+   <input type="date" name="date"><br><br>
+  
+   <fieldset>
+       <legend>Occupation</legend>
+       <input type="radio" name="radio" id="" required>
+       Student
+       <input type="radio" name="radio" id="" required>
+       Empolye
+       <input type="radio" name="radio" id="" required>
+       <label for="">Other</label>
+   </fieldset><br>
+
+   <label for="">Write about yourself: </label><br>
+   <textarea name="" id="" cols="20" rows="4"></textarea><br><br>
+   <label for="">Are you elligible?</label>
+   <input type="checkbox" name="checkbox"><br><br>
+   <input type="checkbox" name="checkbox">
+   <label for="">Are you agree with <a href="">terms & conditions</a>... </label><br><br>
+    
+   <label for="">Password:</label>
+   <input type="password" name="password" minlength="8"><br><br>
+
+  <label for="">
+     <input type="color" name="color" >
+
+      <input type="submit"  value="sign in">
+      <input type="reset"  value="Reset">
+      
+  </label>
+    
+</body>
+</html>
