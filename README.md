@@ -9,10 +9,9 @@
 
 ---------------------------------------------------------
 ---------------------------------------------------------
-<p align="center">
-  
+<p align="center"> 
 ![1_IelAxduwS_YtpsrlRe1d0Q](https://user-images.githubusercontent.com/85143283/193421590-0246320e-5cb2-4363-b827-812b83fa3029.png)
- <p>
+<p>
 
 
 Steps to Contribute in repository :
