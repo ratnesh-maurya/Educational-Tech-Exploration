@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      var x = "x";
+      var o = "o";
+      var c = 2;
+      $(document).ready(function () {
+        $(".square").click(function select_function() {
+          var u = $(this).text();
+          if (u == "x" || u == "o") {
+            return;
+          }
+          if (c % 2 == 0) {
+            $(this).text(o);
+          } else {
+            $(this).text(x);
+          }
+          c++;
+          if (
+            ($("#1").text() == "x" &&
+              $("#2").text() == "x" &&
+              $("#3").text() == "x") ||
+            ($("#1").text() == "o" &&
+              $("#2").text() == "o" &&
+              $("#3").text() == "o")
+          ) {
+            alert($("#1").text() + " " + "win");
+          } else if (
+            ($("#4").text() == "x" &&
+              $("#5").text() == "x" &&
+              $("#6").text()) == "x" ||
+            ($("#4").text() == "o" &&
+              $("#5").text() == "o" &&
+              $("#6").text()) == "o"
+          ) {
+            alert($("#4").text() + " " + "win");
+          } else if (
+            ($("#7").text() == "x" &&
+              $("#8").text() == "x" &&
+              $("#9").text()) == "x" ||
+            ($("#7").text() == "o" &&
+              $("#8").text() == "o" &&
+              $("#9").text()) == "o"
+          ) {
+            alert($("#7").text() + " " + "win");
+          } else if (
+            ($("#1").text() == "x" &&
+              $("#4").text() == "x" &&
+              $("#7").text()) == "x" ||
+            ($("#1").text() == "o" &&
+              $("#4").text() == "o" &&
+              $("#7").text()) == "o"
+          ) {
+            alert($("#1").text() + " " + "win");
+          } else if (
+            ($("#2").text() == "x" &&
+              $("#5").text() == "x" &&
+              $("#8").text()) == "x" ||
+            ($("#2").text() == "o" &&
+              $("#5").text() == "o" &&
+              $("#8").text()) == "o"
+          ) {
+            alert($("#2").text() + " " + "win");
+          } else if (
+            ($("#3").text() == "x" &&
+              $("#6").text() == "x" &&
+              $("#9").text()) == "x" ||
+            ($("#3").text() == "o" &&
+              $("#6").text() == "o" &&
+              $("#9").text()) == "o"
+          ) {
+            alert($("#3").text() + " " + "win");
+          } else if (
+            ($("#1").text() == "x" &&
+              $("#5").text() == "x" &&
+              $("#9").text()) == "x" ||
+            ($("#1").text() == "o" &&
+              $("#5").text() == "o" &&
+              $("#9").text()) == "o"
+          ) {
+            alert($("#1").text() + " " + "win");
+          } else if (
+            ($("#7").text() == "x" &&
+              $("#5").text() == "x" &&
+              $("#3").text()) == "x" ||
+            ($("#7").text() == "o" &&
+              $("#5").text() == "o" &&
+              $("#3").text()) == "o"
+          ) {
+            alert($("#5").text() + " " + "win");
+          } else {
+            return;
+          }
+        });
+      });
+    </script>
+
+    <style>
+      /* .container,.row,.col{border: 1px solid gray;} */
+      .square {
+        border: 10px solid rgb(250, 113, 113);
+        height: 175px;
+        text-align: center;
+        padding-top: 15px;
+        background-color: rgb(22, 22, 20);
+        font-weight: 1000;
+        font-size: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br /><br /><br /><br />
+
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="1"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="2"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="3"
+        ></div>
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="4"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="5"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="6"
+        ></div>
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="7"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="8"
+        ></div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-2 col-xs-2 square text-danger"
+          id="9"
+        ></div>
+        <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+      </div>
+    </div>
+  </body>
+</html>
