@@ -1,0 +1,45 @@
+# Leetcode Problem  [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/discuss/2535901/c-easy-solution-bfs-dfs)
+
+# BFS Solution
+vector<vector<int>> levelOrder(Node* root) {
+        vector<vector<int>>ans;
+        if(!root) return ans;
+        queue<Node*>q;
+        q.push(root);
+        while(!q.empty()){
+            int n = q.size();
+            vector<int>temp;
+            for(int i=0;i<n;i++){
+                Node* curr = q.front();
+                q.pop();
+                temp.push_back(curr->val);
+                for(auto j:curr->children){
+                    q.push(j);
+                }
+            }
+            ans.push_back(temp);
+        }
+        return ans;
+    }
+    
+    # DFS Solution
+    vector<vector<int>>ans;
+    int level=0;
+    vector<vector<int>> solve(Node* root){
+        if(ans.size()==level){
+            ans.push_back({root->val});
+        }
+        else{
+            ans[level].push_back(root->val);
+        }
+        level++;
+        for(Node* n:root->children){
+            solve(n);
+        }
+        level--;
+        return ans;
+    }
+    vector<vector<int>> levelOrder(Node* root) {
+        if(!root) return ans;
+        return solve(root);
+    }
