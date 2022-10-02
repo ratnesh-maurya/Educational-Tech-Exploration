@@ -1,8 +1,10 @@
-num = 5
-a = (2 * num) - 2
-for i in range(0, num):
-     for j in range(0, a ):
-         print(end=" ")
-     for j in range(0, i+1)
-     print('*' , end=" ")
-print(" ")
+# modified pattern.py to create triangles 
+n = int(input("Enter no of rows"))
+
+for i in range(1,n+1):
+  j = i
+  print(" "*(n-i+1),end="") ## to fill space in each line
+  while j>=1:
+    print('*',end=" ")  ## to print stars 
+    j-=1
+  print()  ## escape line
