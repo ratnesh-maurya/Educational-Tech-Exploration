@@ -7,10 +7,8 @@
 # Space Complexity:- O(N) that is linear
 
 def fib(n):
-  if n == 1:
-    return 0
-  elif n == 2:
-    return 1
+  if n <=2:
+    return n-1
   else:
     return (fib(n - 1) + fib(n - 2))
   
