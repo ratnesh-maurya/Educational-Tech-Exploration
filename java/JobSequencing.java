@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Job_sequencing{
+class JobSequencing{
 
 	static int[] sequencing(int[] p, int[] d,int n)                                                        // give values of profits vector(p) in descending order
 	{	
@@ -29,12 +29,8 @@ class Job_sequencing{
 	public static void main(String[] args){
 		Scanner x=new Scanner(System.in);
 		System.out.println();
-		System.out.println("P. Sriram Bhardwaj");
-		System.out.println("Regd.no - 122010308005");
-		System.out.println(" ");
 		System.out.println("Job Sequencing");
 		System.out.println(" ");
-		System.out.println("enter the number of elements");
 		System.out.println("Enter the number of jobs");
 		int n=x.nextInt();
 		int[] arr=new int[n];
