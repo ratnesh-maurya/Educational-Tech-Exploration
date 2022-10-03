@@ -14,4 +14,4 @@ if(BMI>0):
         print("you are overweight")
     else: print("you are severely overweight")
     
-else:("enter valid details")
+else: print("enter valid details")
