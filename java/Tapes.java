@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class tapes
+class Tapes
 {
 	static void decline(float[] r, int n)                             // arrange the tapes in descending order
 	{
