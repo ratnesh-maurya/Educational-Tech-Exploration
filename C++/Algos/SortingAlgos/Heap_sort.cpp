@@ -1,3 +1,9 @@
+/*
+Implemnting Heap Sort.
+Time Complexity = O(n logn);
+Space Complexity = O(1);
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
