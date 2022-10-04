@@ -56,6 +56,6 @@ git push origin my-new-branch
 
 # :handshake: Our Contributors
 <a href="https://github.com/ratnesh-maurya/HACTOBERFEST_2022/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ratnesh-maurya/HACTOBERFEST_2022" />
+  <img src="https://contrib.rocks/image?repo=ratnesh-maurya/your_contribution" />
 </a>
 
