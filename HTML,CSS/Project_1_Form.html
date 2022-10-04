@@ -8,11 +8,28 @@
     <style>
         body{
             background-color: #e6b4dd;
+            margin : 30px;
+            padding: 5% 17% ;
+            border: 5px;
+            border-color: black;
         }
+        .first{
+            padding: 5% 17%;
+        }
+        .h1{
+            text-align: center;
+        }
+        input[type=text] {
+          background-color: #3CBC8D;
+          color: white;
+        }
+
     </style>
 </head>
 <body>
-    <h1>This is HTML form tutorial.</h1>
+<section id="form">
+    <div class="first">
+    <h1><strong> HTML</strong> form tutorial</h1>
     <label for="">First Name*:</label>
     <input type="text" name="firstname" value="" placeholder="firstName" required>
     <label for="">Mid Name:</label>
@@ -20,14 +37,14 @@
     <label for="">Last Name:</label>
     <input type="text" name="lastname" value="" placeholder="lastName"><br><br>
     <div>
-        <label for="">Email*:</label>
+        <label for=""required>Email*:</label>
         <input type="email" name="email" value="" required><br><br>
 
     </div>
-    <label for="">Contect Number:</label>
-    <input type="number" name="contectnumber"><br><br>
-    <label for="">Linkdln-url</label>
-    <input type="url" name="linkdln-url"><br><br>
+    <label for="">Contact Number:</label>
+    <input type="number" name="contactnumber"><br><br>
+    <label for="">Linkedln-url</label>
+    <input type="url" name="linkedln-url"><br><br>
     <label for="">Gender:</label>
     <input type="radio" name="gender" value="">
     Male
@@ -35,7 +52,7 @@
     Female
     <input type="radio" name="gender">
     Other <br><br>
-    <label for="">Parmanant Address*:</label>
+    <label for="">Permanent Address*:</label>
     <input type="text" name="parmanentaddress" value="" required><br><br>
     <label for="">Local Address:</label>
     <input type="text" name="localaddress" ><br><br>
@@ -46,7 +63,7 @@
     <label for="">State:</label>
    <select name="State" id="">
        <option value="" >none..</option>
-       <option value="">Utter Pradesh</option>
+       <option value="">Uttar Pradesh</option>
        <option value="">Bihar</option>
        <option value="">Madhya Pradesh</option>
        <option value="">other</option>
@@ -63,7 +80,7 @@
        <input type="radio" name="radio" id="" required>
        Student
        <input type="radio" name="radio" id="" required>
-       Empolye
+       Employee
        <input type="radio" name="radio" id="" required>
        <label for="">Other</label>
    </fieldset><br>
@@ -85,6 +102,8 @@
       <input type="reset"  value="Reset">
       
   </label>
+  </div>
+</section>
     
 </body>
 </html>
