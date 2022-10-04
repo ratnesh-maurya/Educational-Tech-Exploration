@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flag {
+            background-color: white;
+            width: 210px;
+            height: 140px;
+            margin-left: 39%;
+            margin-top: 20%;
+            position: relative;
+        }
+
+        .orange_strip {
+            background-color: orange;
+            width: 210px;
+            height: 46.6px;
+        }
+
+        .white_strip {
+            background-color: white;
+            width: 210px;
+            height: 46.6px;
+
+        }
+
+        .blue_circle {
+
+            width: 43px;
+            height: 43px;
+            border: 2px solid #000080;
+            border-radius: 50%;
+            margin: 0px auto;
+            animation: blue_circle 10s linear 2s infinite;
+
+        }
+
+        .green_strip {
+            background-color: green;
+            width: 210px;
+            height: 46.6px;
+        }
+
+        .line {
+            position: absolute;
+            display: inline-block;
+            height: 45px;
+            width: 2px;
+            background: #000080;
+            left: 67%;
+            margin-left: -37px;
+        }
+
+        .line:nth-child(1) {
+            transform: rotate(15deg)
+        }
+
+        .line:nth-child(2) {
+            transform: rotate(30deg)
+        }
+
+        .line:nth-child(3) {
+            transform: rotate(45deg)
+        }
+
+        .line:nth-child(4) {
+            transform: rotate(60deg)
+        }
+
+        .line:nth-child(5) {
+            transform: rotate(75deg)
+        }
+
+        .line:nth-child(6) {
+            transform: rotate(90deg)
+        }
+
+        .line:nth-child(7) {
+            transform: rotate(105deg)
+        }
+
+        .line:nth-child(8) {
+            transform: rotate(120deg)
+        }
+
+        .line:nth-child(9) {
+            transform: rotate(135deg)
+        }
+
+        .line:nth-child(10) {
+            transform: rotate(150deg)
+        }
+
+        .line:nth-child(11) {
+            transform: rotate(165deg)
+        }
+
+        .line:nth-child(12) {
+            transform: rotate(180deg)
+        }
+
+        .flagwave {
+
+            width: 207px;
+            height: 140px;
+            margin: -141px 2px;
+            z-index: 2;
+
+            background-image:
+
+                -webkit-gradient(linear,
+                    0% 30%,
+                    50% top,
+                    color-stop(0%, rgba(255, 255, 255, 0)),
+                    color-stop(40%, rgba(255, 255, 255, 0)),
+                    color-stop(90%, rgba(255, 255, 255, .3)),
+                    color-stop(100%, rgba(255, 255, 255, 0))),
+
+                -webkit-gradient(linear,
+                    50% 30%,
+                    100% top,
+                    color-stop(0%, rgba(224, 225, 225, 0)),
+                    color-stop(25%, rgba(225, 225, 225, .3)),
+                    color-stop(50%, rgba(224, 225, 225, 0)),
+                    color-stop(80%, rgba(224, 225, 225, .3)),
+                    color-stop(100%, rgba(224, 225, 225, 0)));
+
+            background-size: 200%;
+            background-position: right;
+
+            -webkit-animation-name: flagwave;
+            -webkit-animation-duration: 15s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes flagwave {
+
+            0% {
+                background-position: -400px 0px, -400px 0px, -400px 0px, -400px 0px;
+            }
+
+            100% {
+                background-position: 800px 0px, 800px 0px, 800px 0px, 800px 0px;
+            }
+        }
+
+    </style>
+
+    <body>
+        <div class="flag">
+
+            <div class="orange_strip">
+
+            </div>
+            <div class="white_strip">
+                <div class="blue_circle">
+
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+
+
+
+                </div>
+            </div>
+
+            <div class="green_strip">
+
+            </div>
+
+
+
+
+            <div class="flagwave"></div>
+
+
+        </div>
+
+    </body>
+</body>
+
+</html>
