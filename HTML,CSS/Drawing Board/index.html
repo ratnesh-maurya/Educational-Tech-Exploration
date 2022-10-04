@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DrawYourMind</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <div id="options-wrapper"> 
+        <section>
+            <h1>Draw</h1>
+            <h1>Your</h1>
+            <h1>Mind</h1>
+        </section>
+        <div>
+            <input type="color" id="colorpicker" value="#0000ff" on />
+
+        </div>
+        <div>
+
+            <button class="glow-on-hover" id="erase-button" onclick="resetboard()">Erase</button>
+        </div>
+      </div>
+      <div id="drawingboard-wrapper">
+        <div id="drawing-board"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

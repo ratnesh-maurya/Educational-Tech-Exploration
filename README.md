@@ -1,6 +1,9 @@
 # HACTOBERFEST_2022
 
-# Feel free to Contribute here for HACTOBERFEST WITH YOUR AMAZING WORKS
+# :handshake:Feel free to Contribute here for HACTOBERFEST WITH YOUR AMAZING WORKS
+----
+----
+# 📌 Important-Avoid sending pre-existing codes/algo which are already in repo
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
@@ -9,21 +12,51 @@
 
 ---------------------------------------------------------
 ---------------------------------------------------------
+
 ![1_IelAxduwS_YtpsrlRe1d0Q](https://user-images.githubusercontent.com/85143283/193421590-0246320e-5cb2-4363-b827-812b83fa3029.png)
 
 
-Steps to Contribute in repository :
 
-- Fork this repository using fork button on the right side top corner of the page.
-- Copy the HTTPS link of the repo by clicking on the code button 
-- Clone your fork in the system using : 
- git clone https:https:https://github.com/ratnesh-maurya/HACTOBERFEST_2022
-- Open directory using :
-  cd HACTOBERFEST_2022
-- Create a branch
-  git checkout -b branch-name
--Open the file in local device, make required changes and then commit using following steps
-  git add filename
-  git commit -m "Message for commit"
-  git push -u origin branch-name
--Create a pull request in the repo after this and wait for PR approval.
+# Steps to Contribute in repository :
+
+## Getting Started 🤩🤗:
+
+- Fork this repo (button on top)
+- Clone on your local machine
+
+```
+git clone https://github.com/ratnesh-maurya/HACTOBERFEST_2022
+
+```
+- Navigate to project directory.
+```
+cd Hacktoberfest2022
+```
+
+- Create a new Branch
+
+```markdown
+git checkout -b my-new-branch
+```
+- Add your contribution
+```
+git add .
+```
+- Commit your changes.
+
+```markdown
+git commit -m "Relevant message"
+```
+- Then push 
+```
+git push origin my-new-branch
+```
+
+
+- Create a new pull request from your forked repository
+
+# :handshake: Our Contributors
+<a href="https://github.com/ratnesh-maurya/HACTOBERFEST_2022/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ratnesh-maurya/HACTOBERFEST_2022" />
+</a>
+
