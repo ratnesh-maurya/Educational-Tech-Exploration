@@ -1,49 +1,91 @@
-import java.util.*;
+import java.util.Scanner;
 
-class LeetCode{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        System.out.println(romanToInt(str));
-    }
 
-    static int romanToInt(String s) {
-        char prev = s.charAt(0);
-        int val = assignVal(prev);
-        for(int i=1;i<s.length();i++){
-            char ch = s.charAt(i);
-            int newval=0;
-            if( (ch == 'V' || ch == 'X') && prev == 'I'){
-                newval = assignVal(ch) - assignVal(prev);
-                val -= assignVal(prev);
+class sol {
+    public static int romanToInt(String s) {
+        int sum=0;
+        for(int i=0;i<s.length();i++)
+        {
+            char c = s.charAt(i);
+            if((c=='I')&&(i+1!=s.length()))
+            {
+                if(s.charAt(i+1)=='V'){
+                    sum+=4;
+                    i+=1;
+                    continue;
+                }
+                else if(s.charAt(i+1)=='X'){
+                    sum+=9;
+                    i+=1;
+                    continue;
+                }
             }
-            else if( (ch == 'L' || ch == 'C') && prev == 'X'){
-                newval = assignVal(ch) - assignVal(prev);
-                val -= assignVal(prev);
+            if((c=='X')&&(i+1!=s.length())){
+                if(s.charAt(i+1)=='L'){
+                    sum+=40;
+                    i+=1;
+                    continue;
+                }
+                else if(s.charAt(i+1)=='C'){
+                    sum+=90;
+                    i+=1;
+                    continue;
+                }
             }
-            else if( (ch == 'M' || ch == 'D') && prev == 'C'){
-                newval = assignVal(ch) - assignVal(prev);
-                val -= assignVal(prev);
+            if((c=='C')&&(i+1!=s.length())){
+                if(s.charAt(i+1)=='D'){
+                    sum+=400;
+                    i+=1;
+                    continue;
+                }
+                else if(s.charAt(i+1)=='M'){
+                    sum+=900;
+                    i+=1;
+                    continue;
+                }
             }
-            else{
-                System.out.println("ch: " + ch);
-                newval = assignVal(ch);
+            switch(c)
+            {
+                case'I':{
+                    sum+=1;
+                    break;
+                }
+                case'V':{
+                    sum+=5;
+                    break;
+                }
+                case'X':{
+                    sum+=10;
+                    break;
+                }
+                case'L':{
+                    sum+=50;
+                    break;
+                }
+                case'C':{
+                    sum+=100;
+                    break;
+                }
+                case'D':{
+                    sum+=500;
+                    break;
+                }
+                case'M':{
+                    sum+=1000;
+                    break;
+                }
             }
-            prev = ch;
-            val += newval;
         }
-        return val;
+        return sum;
     }
-    
-    static int assignVal(char ch){
-        if(ch == 'I') return 1;
-        else if(ch == 'I') return 1;
-        else if(ch == 'V') return 5;
-        else if(ch == 'X') return 10;
-        else if(ch == 'L') return 50;
-        else if(ch == 'C') return 100;
-        else if(ch == 'D') return 500;
-        else if(ch == 'M') return 1000;
-        return 0;
+}
+public class Roman_to_Integer{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String n;
+        n=sc.nextLine();
+        sol ob = new sol();
+        int r=ob.romanToInt(n);
+        System.out.println(r);
     }
 }
