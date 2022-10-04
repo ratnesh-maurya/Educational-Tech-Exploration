@@ -1,0 +1,40 @@
+.section-title{
+    padding: 40px;
+    margin: 20px;
+}
+
+.nav-item{
+    font-size: 1.5rem;
+    padding: 10px 30px;
+}
+
+.brand-name{
+    font-size: 2rem;
+}
+
+.my-card{
+    padding: 30px 20px;
+    margin-top: -40px;
+    border-radius: 40px;
+
+}
+
+.card{
+    box-shadow: 0 4px 15px darkgrey;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.item-details{
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px darkslategray;
+    padding: 10px 5px 0;
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    width: 25%;
+    position: relative;
+    left: 75%;
+}
