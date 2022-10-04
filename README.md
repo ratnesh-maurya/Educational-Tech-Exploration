@@ -1,7 +1,9 @@
 # HACTOBERFEST_2022
 
 # Feel free to Contribute here for HACTOBERFEST WITH YOUR AMAZING WORKS
-#📌Important-Avoid sending pre-existing codes/algo which are already in repo
+----
+----
+# Important-Avoid sending pre-existing codes/algo which are already in repo
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
