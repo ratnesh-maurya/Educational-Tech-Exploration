@@ -1,6 +1,8 @@
 # HACTOBERFEST_2022
-
-# 📌 Important-Avoid sending pre-existing codes/algo which are already in repo otherwise it will be marked as spam 
+# 📌Important
+# Do not add any pre existing solution.
+# Do not copy paste someone else code.
+# Do not try to spam.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
