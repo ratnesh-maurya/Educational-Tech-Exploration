@@ -1,4 +1,4 @@
-# HACTOBERFEST_2022
+
 # 📌Important
 # Do not add any pre existing solution.
 # Do not copy paste someone else code.
