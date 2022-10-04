@@ -1,32 +1,29 @@
-//using recursion
-#include<stdio.h>
+#include <stdio.h>
+int main() {
 
-void fibonacci(int a,int b,int n)
-{
-    
-    if (n>0)
-    {
-        printf("%d ",a);
-        int c=a+b;
-        a=b;
-        b=c;
-        --n;
-        fibonacci(a,b,n);
-    }
+  int i, n;
 
+  // initialize first and second terms
+  int t1 = 0, t2 = 1;
+
+  // initialize the next term (3rd term)
+  int nextTerm = t1 + t2;
+
+  // get no. of terms from user
+  printf("Enter the number of terms: ");
+  scanf("%d", &n);
+
+  // print the first two terms t1 and t2
+  printf("Fibonacci Series: %d, %d, ", t1, t2);
+
+  // print 3rd to nth terms
+  for (i = 3; i <= n; ++i) {
+    printf("%d, ", nextTerm);
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+  }
+
+  return 0;
 }
 
-int main()
-{
-    int n1,n2,N;
-    printf("Enter the first number :");
-    scanf("%d",&n1);
-    printf("Enter the second number :");
-    scanf("%d",&n2);
-    printf("Enter the number terms :");
-    scanf("%d",&N);
-    fibonacci(n1,n2,N);
-    
-    
-    return 0;
-}
