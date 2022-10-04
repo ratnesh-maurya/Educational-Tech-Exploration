@@ -94,6 +94,7 @@ class mainFactory{
 			
 			//create new factory in part 2
 			//create products in part 3
+			//we're done with example
 		}	
 };
 
