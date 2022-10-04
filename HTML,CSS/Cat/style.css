@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg,#df8ef0,#75beee,#157);
+  }
+  .container {
+    position: relative;
+  }
+  
+  .square-wrapper {
+    display: grid;
+    place-items: center;
+  }
+  .square {
+    background: rgb(252, 107, 107);
+    z-index: 99;
+    width: 150px;
+    height: 90px;
+    border: 8px solid rgb(235, 127, 55);
+    
+  }
+  
+  .square-middle {
+    margin: -8px 100px -8px 0;
+    height: 60px;
+  }
+  
+  /* Cat------------------------------------------------------- */
+  .cat-wrapper {
+    display: flex;
+    margin-bottom: -90px;
+    margin-left: 50px;
+  }
+  
+  .left-leg {
+    background: black;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    border-radius: 10px 0 0 0;
+  }
+  
+  .right-leg {
+    z-index: 999;
+    background: black;
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+  }
+  
+  .cat-left {
+    display: flex;
+  }
+  
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid black;
+    border-right: 50px solid transparent;
+    position: relative;
+  }
+  
+  .triangle-right {
+    width: 0;
+    height: 0;
+    margin-left: -50px;
+    border-bottom: 50px solid rgb(0, 0, 0);
+    border-left: 50px solid transparent;
+    position: relative;
+  }
+  
+  .circle {
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .circle-left {
+    z-index: 99;
+    top: 30px;
+    left: 7px;
+  }
+  
+  .circle-right {
+    top: 30px;
+    right: 7px;
+  }
+  
+  .cat-right {
+    margin-left: -20px;
+    background: black;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+  
+  .tail {
+    z-index: 999;
+    width: 60px;
+    height: 120px;
+    border-top-right-radius: 110px; 
+    border-bottom-right-radius: 110px;
+    border: 10px solid black;
+    border-left: 0;
+    position: absolute;
+    left: 155px;
+  }
+  .content{
+      font-family: 'Poppins',sans-serif;
+      color: rgb(212, 229, 243);
+  }
+  .Thanks{
+    font-family: 'Poppins',sans-serif;
+    color: rgb(212, 229, 243);
+}
+  pre{
+      font-family: 'Poppins',sans-serif;
+  }
