@@ -24,7 +24,7 @@
 - Clone on your local machine
 
 ```
-git clone https://github.com/ratnesh-maurya/HACTOBERFEST_2022
+git clone https://github.com/ratnesh-maurya/your_contribution
 
 ```
 - Navigate to project directory.
