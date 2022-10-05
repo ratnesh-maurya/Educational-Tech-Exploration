@@ -1,0 +1,829 @@
+﻿Patterns
+
+
+Solutions 
+________________
+
+
+
+
+1. Program to print solid rectangle
+   using * .
+   * * * * *
+    * * * * *
+    * * * * *
+    * * * * *
+    
+   #include <iostream>
+     using namespace std;
+     int main(){
+      int r,c;
+      cin >>r>> c;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=c;j++)
+          cout <<"* ";
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+     
+
+
+2. Program to print hollow rectangle
+   using * .
+   * * * * *
+    *          *
+    *          *
+    * * * * *
+   
+   #include <iostream>
+     using namespace std;
+     int main(){
+      int r,c;
+      
+      cin >>r>> c;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j<=c;j++)
+       {
+          if(i==1 || i==r || j==1 || j ==c )
+           cout <<"* ";
+         else
+           cout <<"  " ;
+        }
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+
+
+
+
+3. Program to print half pyramid using * .
+   *
+    * *
+    * * *
+    * * * * 
+    * * * * *
+
+
+    # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=i; j++)
+          cout <<"* " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+
+
+4. Program to print inverted pyramid
+   using *.
+   * * * * *
+    * * * *
+    * * *
+    * * 
+    * 
+   
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r; i++)
+      {
+         for(int j=(r+1-i) ;j >=1; j--)
+          cout <<"* " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+   
+5. Program to form a staircase.
+             *
+            * *
+          * * *
+       * * * *
+    * * * * *
+
+
+  # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=r; j++)
+        { 
+           if((i+j)>r )
+            cout <<"* " ;
+           else 
+             cout <<"  " ;
+          }
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+6. Program to form inverted staircase.
+
+
+  * * * * *
+     * * * *
+       * * *
+          * * 
+             * 
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=r; j++)
+        { 
+           if(i<=j)
+            cout <<"* " ;
+           else 
+             cout <<"  " ;
+          }
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+7. Program to print half pyramid using
+   numbers. 
+   1
+    1 2
+    1 2 3
+    1 2 3 4
+    1 2 3 4 5
+
+
+   
+    # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=i; j++)
+          cout <<j<<" " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+
+
+8. Program  to print half pyramid using 
+   alphabets.  
+   A
+    B B
+    C C C
+    D D D D
+    E  E E E E
+    
+    # include <iostream> 
+       using namespace std;
+       int main (){
+       char r ;
+       cin>>r;
+       for(char i='A' ; i <=r ; i++)
+      {
+         for(char j='A' ;j<=i; j++)
+          cout <<i<<" " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+9. Inverted half pyramid  using numbers.
+   1 2 3 4 5
+    1 2 3 4
+    1 2 3
+    1 2
+    1
+    
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r; i++)
+      {
+         for(int j=1 ;j <=(r+1-i); j++)
+          cout <<j<<" " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+10. Program to print half pyramid using 
+   numbers .
+   1
+    2 2
+    3 3 3
+    4 4 4 4
+    5 5 5 5 5
+
+
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=i; j++)
+          cout <<i<<" " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+11. Program to print inverted half pyramid 
+        using numbers.
+   1 1 1 1 1
+    2 2 2 2
+    3 3 3 
+    4 4 
+    5
+        
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r ;
+       cin>>r;
+       for(int i=1;i <=r; i++)
+      {
+         for(int j=(r+1-i) ;j >=1; j--)
+          cout <<i<<" " ;
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+   
+12. Program to form this pattern. 
+   1
+    2 3
+    4 5 6
+    7 8 9 10
+    
+   # include <iostream> 
+       using namespace std;
+       int main (){
+       int r , n=1;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      {
+         for(int j=1 ;j<=i; j++){
+          cout <<n<<" " ;
+          n++;
+         } 
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+13. Program to form this pattern. 
+   1
+    0 1
+    1 0 1
+    0 1 0 1
+
+
+    # include <iostream> 
+       using namespace std;
+       int main (){
+       int r , n=1;
+       cin>>r;
+       for(int i=1;i <=r ; i++)
+      { 
+         if(i%2==0)
+           n=0 ;
+        else
+           n=1 ;
+
+
+         for(int j=1 ;j<=i; j++){
+          cout <<n<<" " ;
+          if(n==1)
+             n=0 ;
+          else
+             n=1;
+          } 
+        
+        cout << endl;
+       }
+       return 0 ;
+     } 
+
+
+
+
+14. Program to form rhombus using *.
+           * * * *
+          * * * *
+       * * * *
+     * * * *
+
+
+   #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<"  ";
+        for(int j=1;j<=r;j ++)
+          cout <<"* " ;
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+15. Program to form rhombus using *.
+   * * * * 
+       * * * * 
+          * * * * 
+             * * * * 
+     #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=i-1;j >0;j--)
+          cout <<" ";
+        for(int j=1;j<=r;j ++)
+          cout <<"* " ;
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+
+
+16. Program to form hollow rhombus using * .
+          * * * *
+          *      *
+       *      *
+     * * * *
+    #include <iostream>
+     using namespace std;
+      int main (){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<" ";
+        for(int j=1;j<=r;j ++)
+       {
+          if(i==1 || i ==r || j==1 || j ==c)
+            cout <<"* " ;
+         else 
+            cout <<"  " ;
+        }
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+17. Program to form pyramid using 
+   numbers. 
+        1
+        2  2 
+      3  3  3 
+     4  4  4  4 
+     5  5  5  5  5
+
+
+    #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<"  ";
+        for(int j=1;j<=i;j ++)
+          cout <<i<<"  " ;
+       cout <<endl;
+     }
+     return 0;
+   }
+
+
+18. Print Pascal's triangle. 
+   1
+    1 1
+    1 2 1
+    1 3 3 1
+    1 4 6 4 1
+    
+    int main()
+{
+    int r, c = 1;
+    cin >> r ;
+
+
+    for(int i = 0; i < r ; i++)
+    {
+        
+        for(int j = 0; j <= i; j++)
+        {
+            if (j == 0 || i == 0)
+                c = 1;
+            else
+                c = c * (i-j+1)/j;
+
+
+            cout << c << "   ";
+        }
+        cout << endl;
+    }
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19. Program to form pyramid using 
+        numbers. 
+              1
+        1  1
+      1  3  3  1 
+     1  4  6  4  1 
+
+
+       #include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int r, c = 1;
+    cin >> r ;
+
+
+    for(int i = 0; i < r ; i++)
+    {
+        for(int space = 1; space <= r-i; space++)
+            cout <<"  ";
+
+
+        for(int j = 0; j <= i; j++)
+        {
+            if (j == 0 || i == 0)
+                c = 1;
+            else
+                c = c * (i-j+1)/j;
+
+
+            cout << c << "   ";
+        }
+        cout << endl;
+    }
+
+
+    return 0;
+}
+
+
+     
+20. Program to form solid diamond using 
+        *.
+
+
+              *
+        *  *
+          *  *  *
+      *  *  *  *
+     *  *  *  *  *
+       *  *  *  *  *
+         *  *  *  *
+           *  *  *    
+             *  *
+               *
+
+
+     #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<" ";
+        for(int j=1;j<=i;j ++)
+          cout <<"* " ;
+       cout <<endl;
+     }
+     for(int i=1;i <=r;i++)
+     {
+        for(int j=i-1;j >0;j--)
+          cout <<" ";
+        for(int j=(r+1-i);j>0;j --)
+          cout <<"* " ;
+       cout <<endl;
+      }
+     return 0;
+   }
+
+
+
+
+21. Program to form hollow diamond using 
+        *.
+              *
+        *   *
+          *     *
+      *         *
+     *             *
+         *          *
+           *       *    
+             *   *
+               *
+    
+    
+     #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<" ";
+        for(int j=1;j<=i;j ++)
+       { 
+          if(j==1 || j==i)
+          
+            cout <<"* " ;
+         else
+            cout <<"  " ;
+        }
+       cout <<endl;
+     }
+     for(int i=1;i <r;i++)
+     {
+        for(int j=i-1;j >0;j--)
+          cout <<" ";
+        for(int j=(r+1-i);j>0;j --)
+        { 
+          if(j==(r+1-i) || j==i)
+          
+            cout <<"* " ;
+         else
+            cout <<"  " ;
+        }
+          
+       cout <<endl;
+      }
+     return 0;
+   }
+
+
+22. Program to form  diamond using  *.
+         *
+         * * *
+          *     *
+      *         *
+     *             *
+         *          *
+           *       *    
+             *   *
+               *
+
+
+     #include <iostream>
+     using namespace std;
+      int main(){
+      int r;
+      cin >>r;
+      for(int i=1;i <=r;i++)
+     {
+        for(int j=1;j <=(r-i);j++)
+          cout <<"*";
+        for(int j=1;j<=i;j ++)
+       { 
+          if(j==1 || j==i)
+          
+            cout <<"* " ;
+         else
+            cout <<"  " ;
+        }
+       cout <<endl;
+     }
+     for(int i=1;i <r;i++)
+     {
+        for(int j=i-1;j >0;j--)
+          cout <<"*";
+        for(int j=(r+1-i);j>0;j --)
+        { 
+          if(j==(r+1-i) || j==i)
+          
+            cout <<"* " ;
+         else
+            cout <<"  " ;
+        }
+          
+       cout <<endl;
+      }
+     return 0;
+   }
+
+
+
+
+23.   Program to form  butterfly using  *.
+       
+      # include <iostream> 
+         using namespace std;
+         int main (){
+         int r;
+        cin>>r;
+        for (int i=1 ; i<= r ; i++)
+       {
+          for(int j=1 ; j<=i ; j++)
+          cout <<"* ";
+         for(int j = 2*(r-i) ; j>0 ; j--)
+        {
+            cout <<"  " ;
+            
+         }
+         for(int j=1;j<=i;j++)
+            cout <<"* " ;
+        cout <<endl;
+       }
+
+
+      for(int i=1; i<r; i ++)
+     {
+        for(int j=r-i ; j>0 ; j--)
+         cout <<"* " ;
+       for(int j=1;j<=2*i ;j++)
+         cout <<"  " ;
+    
+          for(int j=r-i ; j>0; j--)
+          {
+             
+               cout <<"* ";
+           }
+       cout << endl;
+      }
+     return 0;
+
+
+}
+
+
+24.   Program to form hollow butterfly using  *.
+
+
+
+
+# include <iostream> 
+   using namespace std;
+   int main (){
+    int r;
+    cin>>r;
+    for (int i=1 ; i<= r ; i++)
+   {
+      for(int j=1 ; j<=i ; j++)
+     { 
+          if (j==1 || j==i)
+            cout <<"* ";
+           else
+             cout <<"  " ;
+       }
+       for(int j = 2*(r-i) ; j>0 ; j--)
+       {
+           cout <<"  " ;
+            
+        }
+        for(int j=1;j<=i;j++)
+        {
+           if(j==1 || j== i)
+            cout <<"* " ;
+           else
+            cout <<"  ";
+        }
+       cout <<endl;
+      }
+
+
+      for(int i=1; i<r; i ++)
+     {
+        for(int j=r-i ; j>0 ; j--)
+       { 
+           if(j==r-i || j ==1)
+            cout <<"* " ;
+           else
+            cout <<"  ";
+       }
+       for(int j=1;j<=2*i ;j++)
+         cout <<"  " ;
+    
+        for(int j=r-i ; j>0; j--)
+       {
+           if (j==r-i || j==1)
+             cout <<"* ";
+            else
+             cout <<"  ";
+        }
+       cout << endl;
+      }
+     return 0;
+
+
+}
+
+
+   
+25. Program to form half diamond using *.
+
+
+# include <iostream> 
+         using namespace std;
+         int main (){
+         int r;
+        cin>>r;
+        for (int i=1 ; i<= r ; i++)
+       {
+          for(int j=1 ; j<=i ; j++)
+           cout <<"* ";
+         cout <<endl;
+       }
+
+
+      for(int i=1; i<r; i ++)
+     {
+        for(int j=r-i ; j>0 ; j--)
+         cout <<"* " ;
+       cout << endl;
+    }
+    return 0 ;
+}
