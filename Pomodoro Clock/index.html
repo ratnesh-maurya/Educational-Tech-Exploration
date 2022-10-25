@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro🔔 by KHJ-21</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/img/khj logo.png" rel="icon">
+
+    <div id="logo"  >
+       <a href="#" ><img src="assets/img/KHJ-logo-wihite_bg.jpg"></a>
+     </div>
+  </head>
+  <body>
+    <br><br><br><br> 
+    <h1 >Kill Procrastination⏲ with Pomodoro🛎 by KHJ-21</h1>
+
+    <figure class="clock">
+      <div class="mins" aria-setsize=""><h1>00</h1></div>
+      <div>:</div>
+      <div class="secs"><h1>00</h1></div>
+      <audio
+        src="assets/music/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="240" width="240">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="90"
+          cx="120"
+          cy="120"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">Start Focus</button>
+      <button class="reset">Reset</button>
+      <button class="pause">Pause</button>
+    </div>
+    
+    <form action="." height="400px" widht="400px">
+      <label for="focusTime">Focus Time (in minutes)</label>
+      <input type="number" value="1" id="focusTime"  />
+      <label for="breakTime">Break Time (in minutes)</label>
+      <input type="number" value="1" id="breakTime" />
+      <button type="submit">Save settings</button>
+      <br><br>
+      <footer id="footer">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 text-lg-left text-center">
+              <div class="copyright">
+                &copy; Copyright <strong>KHJ-21</strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+               
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+    </form>
+
+    
+
+    
+    
+
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/progress.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
