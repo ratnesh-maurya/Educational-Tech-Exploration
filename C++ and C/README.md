@@ -10,13 +10,6 @@ Prepare to embark on a cosmic coding adventure in the C/C++ Programs section of 
 
 Our collection of C and C++ programs is like a constellation of knowledge, offering a dazzling array of topics. From the foundational principles to the most complex algorithms, these programs are carefully crafted to not only teach but to inspire your inner coder. Dive into the depths of data structures, explore the nebulae of sorting algorithms, and navigate the galaxies of numerical computations! 🪐💫
 
-### The Cosmic Catalog 📜
-
-In this astral library, you'll discover a myriad of programs that beckon you:
-
-- **Program 1:** [Program Name](link-to-program): A description that sparkles like a distant star, guiding you through its purpose and significance in the C/C++ universe.
-- **Program 2:** [Program Name](link-to-program): Another celestial creation, with a description that shines light on its role and relevance in the cosmos of programming.
-- ...
 
 ### Organized Folders 📁
 
