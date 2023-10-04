@@ -1,7 +1,4 @@
 
-<p align="center">
-  <img src="https://github.com/ratnesh-maurya/your_contribution/assets/85143283/84964e0c-6489-44e0-b535-858eec47affb" alt="Your Image Description">
-</p>
 
 # 📚 Welcome to the Educational Tech Exploration Repository  🚀
 # Give a Star ⭐
