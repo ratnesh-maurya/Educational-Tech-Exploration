@@ -1,5 +1,5 @@
 import java.util.Scanner;  
-public class SandglassPattern  
+public class Sandglass_Star_Pattern  
 {  
 public static void main(String[] args)  
 {  
